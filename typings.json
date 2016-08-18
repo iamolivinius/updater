@@ -1,0 +1,11 @@
+{
+  "name": "updater",
+  "dependencies": {},
+  "globalDependencies": {
+    "chai": "registry:dt/chai#3.4.0+20160601211834",
+    "fetch-mock": "registry:dt/fetch-mock#5.0.0+20160724065250",
+    "mocha": "registry:dt/mocha#2.2.5+20160720003353",
+    "sinon": "registry:dt/sinon#1.16.0+20160517064723",
+    "whatwg-fetch": "registry:dt/whatwg-fetch#0.0.0+20160728142841"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "updater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "chai": "^3.5.0",
+    "electron-prebuilt": "^1.3.3",
+    "fetch-mock": "github:iamolivinius/fetch-mock#withes5folder",
+    "karma": "^1.2.0",
+    "karma-browserify": "^5.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-electron": "^4.0.0",
+    "karma-mocha": "^1.1.1",
+    "karma-source-map-support": "^1.1.0",
+    "mocha": "^3.0.2",
+    "sinon": "^1.17.5",
+    "tsify": "^1.0.3",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "request": "^2.74.0",
+    "request-promise-native": "^1.0.3",
+    "whatwg-fetch": "^1.0.0"
+  }
+}
