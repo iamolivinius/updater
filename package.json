@@ -5,25 +5,32 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "typings install",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "rimraf coverage && karma start --single-run && npm run coverage",
+    "coverage": "npm run coverage:remap && npm run coverage:report",
+    "coverage:remap": "remap-istanbul -i coverage/coverage.json -o coverage/coverage.json -t json",
+    "coverage:report": "istanbul report html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browserify": "^13.1.0",
     "chai": "^3.5.0",
     "electron-prebuilt": "^1.3.3",
     "fetch-mock": "^5.1.1",
+    "istanbul": "^0.4.5",
+    "istanbul-instrumenter-loader": "^0.2.0",
     "karma": "^1.2.0",
-    "karma-browserify": "^5.1.0",
     "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.1.1",
     "karma-electron": "^4.0.0",
     "karma-mocha": "^1.1.1",
     "karma-source-map-support": "^1.1.0",
+    "karma-webpack": "^1.8.0",
     "mocha": "^3.0.2",
+    "remap-istanbul": "^0.6.4",
+    "rimraf": "^2.5.4",
     "sinon": "^1.17.5",
-    "tsify": "^1.0.3",
-    "watchify": "^3.7.0"
+    "ts-loader": "^0.8.2",
+    "webpack": "^1.13.2"
   },
   "dependencies": {
     "whatwg-fetch": "^1.0.0"

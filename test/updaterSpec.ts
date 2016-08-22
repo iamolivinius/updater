@@ -4,8 +4,6 @@ import * as sinon from 'sinon'
 import * as fetchMock from 'fetch-mock'
 import {update} from '../src/updater'
 
-let server
-
 describe('test updater', () => {
   before(() => {
     fetchMock.mock('https://secure-software-engineering.github.io/rose/example/base.json', "HELLO WORLD", {method: 'GET'})

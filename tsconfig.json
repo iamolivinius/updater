@@ -3,11 +3,13 @@
         "target": "es6",
         "module": "commonjs",
         "moduleResolution": "node",
-        "strictNullChecks": true
+        "strictNullChecks": true,
+        "noImplicitAny": true
     },
     "exclude": [
         "node_modules",
         "typings/browser",
         "typings/browser.d.ts"
-    ]
+    ],
+    "compileOnSave": false
 }
